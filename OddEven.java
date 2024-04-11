@@ -5,7 +5,7 @@ public class OddEven {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner s=new Scanner(System.in);
-		int n,i;
+		int n,i,cube;
 		System.out.println("enter the n value:");
 		n=s.nextInt();
 		if(n<0)
@@ -24,6 +24,11 @@ public class OddEven {
 				System.out.print("even number:"+i+" ");
 			}
 			System.out.println();
+		}
+		for(i=0;i<n;i++)
+		{
+			cube=i*i*i;
+			System.out.println("cube numbers:"+i+":^3="+cube);
 		}
 
 	}

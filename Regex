@@ -1,0 +1,17 @@
+package com.regex.str;
+import java.util.*;
+import java.util.*;
+import java.util.regex.*;
+public class Regex1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s="Welcome to Java programming";
+		Pattern pattern=Pattern.compile("Java");
+		Matcher matcher=pattern.matcher(s);
+		s=matcher.replaceAll("Python");
+		System.out.println(s);
+		
+	}
+
+}

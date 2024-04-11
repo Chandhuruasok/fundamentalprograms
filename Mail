@@ -1,0 +1,17 @@
+package com.regex.str;
+import java.util.*;
+import java.util.regex.*;
+public class Regex {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Pattern pattern=Pattern.compile("Sys");
+		Matcher match=pattern.matcher("ChainSys");
+		while(match.find())
+		{
+			System.out.println("pattern found from position:"+match.start()+"to"+(match.end()-1));
+		}
+
+	}
+
+}

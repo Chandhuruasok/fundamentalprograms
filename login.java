@@ -9,7 +9,7 @@ public class Login {
 		// TODO Auto-generated method stub
 		Scanner scanner = new Scanner(System.in);
 		Scanner s=new Scanner(System.in);
-		String emailCheck="^[\\w_+\\.]*[\\w_]\\@[\\w_+\\.]+[\\w]$";
+		String emailCheck="^[a-z0-9]+@[a-z]+\\.[a-z]{2,}$";
 		System.out.println("Enter the employee email id:");
 		String email=s.next();
 		Pattern pattern=Pattern.compile(emailCheck);
